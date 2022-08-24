@@ -20,3 +20,10 @@ Route::get('/', function () {
     ];
     return view('home',$data);
 });
+Route::get('/info', function () {
+    $data=[
+        'ruolo' => 'CEO',
+        'azienda' => 'Soriedos'
+    ];
+    return view('info',$data);
+});
